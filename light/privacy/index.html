@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Raasel Light</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1.25rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.3;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        margin-top: 1.25rem;
+        margin-bottom: 0.4rem;
+        font-size: 1.05rem;
+      }
+
+      h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.95rem;
+      }
+
+      p,
+      li {
+        font-size: 0.98rem;
+      }
+
+      ul {
+        margin: 0.2rem 0 0.8rem 1.1rem;
+        padding: 0;
+      }
+
+      code {
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 4px;
+        padding: 0.1rem 0.35rem;
+        font-size: 0.88em;
+      }
+
+      nav {
+        margin-bottom: 1rem;
+        font-size: 0.92rem;
+      }
+
+      .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .home-link {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: #0f172a;
+      }
+
+      .app-tag {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #64748b;
+        letter-spacing: 0.03em;
+      }
+
+      a {
+        color: #1d4ed8;
+      }
+
+      .summary {
+        background: #f1f5f9;
+        border-left: 4px solid #1d4ed8;
+        border-radius: 8px;
+        padding: 0.9rem 1.1rem;
+        margin: 1rem 0 1.5rem;
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0.6rem 0 1rem;
+        font-size: 0.92rem;
+      }
+
+      th {
+        text-align: left;
+        padding: 0.5rem 0.6rem;
+        border-bottom: 2px solid #e2e8f0;
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      td {
+        padding: 0.5rem 0.6rem;
+        border-bottom: 1px solid #e2e8f0;
+        vertical-align: top;
+        color: #334155;
+      }
+
+      .legal-footer {
+        margin-top: 1.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e2e8f0;
+        font-size: 0.85rem;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="top-nav">
+        <a href="/" class="home-link">⌂</a>
+        <span class="app-tag">RAASEL LIGHT</span>
+      </nav>
+      <article class="card">
+        <h1>Privacy Policy — Raasel Light</h1>
+        <p><strong>Last updated:</strong> August 5, 2026 &nbsp;·&nbsp; Applies to the Android app <code>com.raasel.light</code></p>
+
+        <div class="summary">
+          <p><strong>The short version.</strong> Raasel Light is a client for the
+          open <a href="https://matrix.org">Matrix</a> protocol. It has no server of its own. Your account
+          and your messages live on whichever Matrix homeserver <em>you</em> choose when you sign in — we
+          never receive, store, or relay them. The only data that reaches Raseen Labs is anonymous crash
+          diagnostics, and only when the app crashes.</p>
+        </div>
+
+        <h2>1. Who we are</h2>
+        <p>Raasel Light is published by <strong>Raseen Labs</strong>. This policy covers the Raasel Light
+        Android application only. It does not cover the separate Raasel service at raasel.com, which has
+        its own policy, and it does not cover the Matrix homeserver you connect to.</p>
+        <p>Privacy contact: <a href="mailto:info@raseenlabs.com">info@raseenlabs.com</a></p>
+
+        <h2>2. How the app works, and why that matters here</h2>
+        <p>Raasel Light is a "bring your own homeserver" client. At sign-in you enter a Matrix user ID and
+        password, and the app talks directly to that homeserver over HTTPS. Raseen Labs operates no
+        intermediary. In practical terms:</p>
+        <ul>
+          <li>Your credentials are sent to your homeserver, not to us.</li>
+          <li>Your messages, photos, and voice notes are sent to your homeserver, not to us.</li>
+          <li>Your contacts and room memberships are held by your homeserver, not by us.</li>
+        </ul>
+        <p>The privacy practices of your chosen homeserver — retention, logging, IP address handling,
+        lawful-access policy — are set by whoever operates it, and are outside our control. If you are
+        unsure who runs your homeserver, ask before signing in.</p>
+
+        <h2>3. Data the app handles</h2>
+        <table>
+          <tr><th>Data</th><th>Where it goes</th><th>Why</th></tr>
+          <tr>
+            <td><strong>Matrix user ID and password</strong></td>
+            <td>Your homeserver</td>
+            <td>To authenticate you. The password is not retained after login; an access token is stored on your device instead.</td>
+          </tr>
+          <tr>
+            <td><strong>Messages you send and receive</strong></td>
+            <td>Your homeserver</td>
+            <td>Core function of a messenger. In encrypted rooms the server holds only ciphertext.</td>
+          </tr>
+          <tr>
+            <td><strong>Photos you attach or capture</strong></td>
+            <td>Your homeserver</td>
+            <td>Only files you explicitly select or photograph. The app does not scan your gallery.</td>
+          </tr>
+          <tr>
+            <td><strong>Voice messages you record</strong></td>
+            <td>Your homeserver</td>
+            <td>Recorded only while you hold the record control. No background listening.</td>
+          </tr>
+          <tr>
+            <td><strong>Profile picture and display name</strong></td>
+            <td>Your homeserver</td>
+            <td>Only if you set one.</td>
+          </tr>
+          <tr>
+            <td><strong>Crash reports and diagnostics</strong></td>
+            <td>Sentry (see §5)</td>
+            <td>To find and fix crashes.</td>
+          </tr>
+        </table>
+
+        <h2>4. Data stored on your device</h2>
+        <p>Raasel Light keeps a local SQLite database on your phone containing your session token, your
+        end-to-end encryption keys, and a cache of recent messages. This is what allows the app to stay
+        logged in and to decrypt past conversations. It is stored in the app's private storage area, which
+        other apps cannot read on a non-rooted device.</p>
+        <p>Signing out, clearing the app's data, or uninstalling the app removes this local database.
+        Note that removing your encryption keys without a saved recovery key may make previously received
+        encrypted messages permanently unreadable on that device.</p>
+
+        <h2>5. Third-party services</h2>
+        <h3>Sentry (crash reporting)</h3>
+        <p>Raasel Light uses <a href="https://sentry.io/privacy/">Sentry</a> to report crashes. When the app
+        crashes, Sentry may receive a stack trace, the app version, the operating system version, the device
+        model, and a breadcrumb trail of in-app navigation events leading up to the failure. This is used
+        solely to diagnose defects.</p>
+        <p>Sentry is not present in the messaging code path, and message content, contact lists, photos,
+        voice recordings, and encryption keys are not sent to it.</p>
+        <h3>Nothing else</h3>
+        <p>Raasel Light contains <strong>no advertising SDK, no analytics SDK, no tracking pixels, and no
+        attribution or fingerprinting libraries</strong>. We do not sell or rent data to anyone, and we run
+        no profiling or behavioural advertising of any kind.</p>
+
+        <h2>6. Permissions the app requests</h2>
+        <table>
+          <tr><th>Permission</th><th>Used for</th></tr>
+          <tr><td><code>INTERNET</code></td><td>Connecting to your Matrix homeserver. Required for the app to function at all.</td></tr>
+          <tr><td><code>RECORD_AUDIO</code></td><td>Recording a voice message, only while you are actively recording one.</td></tr>
+          <tr><td><code>CAMERA</code></td><td>Taking a photo to send directly from the camera. Choosing an existing photo uses Android's system photo picker and needs no permission.</td></tr>
+        </table>
+        <p>The app requests <strong>no</strong> location, contacts, calendar, SMS, call log, phone state, or
+        background-storage permissions.</p>
+
+        <h2>7. Encryption</h2>
+        <p>All communication with your homeserver uses HTTPS. In rooms where end-to-end encryption is
+        enabled, message content is additionally encrypted on your device using
+        <a href="https://github.com/matrix-org/vodozemac">vodozemac</a>, the Matrix project's own audited
+        cryptographic library, so that only participating devices can read it. Neither Raseen Labs nor your
+        homeserver operator can read the contents of encrypted messages.</p>
+
+        <h2>8. Children</h2>
+        <p>Raasel Light is not directed at children under 13, and we do not knowingly process data from
+        them. If you believe a child has used the app, contact us and we will help you address it — though
+        note that any account data would sit with the relevant homeserver, not with us.</p>
+
+        <h2>9. Your choices and deletion</h2>
+        <p>Because the app holds no server-side account of its own, deletion works in two parts:</p>
+        <ul>
+          <li><strong>Data on your device</strong> — sign out from Settings, or uninstall the app, or clear
+          its data from Android Settings. This is immediate and complete.</li>
+          <li><strong>Your Matrix account and message history</strong> — these belong to your homeserver.
+          To delete or export them, use that homeserver's own account-deletion process, or contact its
+          administrator. We have no ability to delete data from a server we do not run.</li>
+          <li><strong>Crash reports</strong> — to request deletion of crash diagnostics associated with your
+          device, email <a href="mailto:info@raseenlabs.com">info@raseenlabs.com</a> and we will remove them
+          from Sentry.</li>
+        </ul>
+
+        <h2>10. Changes to this policy</h2>
+        <p>If we make a material change we will update the date at the top of this page and note the change
+        in the app's release notes on Google Play. Continued use after a change means you accept the updated
+        policy.</p>
+
+        <h2>11. Contact</h2>
+        <p>Questions, requests, or complaints about this policy:
+        <a href="mailto:info@raseenlabs.com">info@raseenlabs.com</a></p>
+
+        <div class="legal-footer">
+          Raasel Light is free and open software built on the Matrix protocol.
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

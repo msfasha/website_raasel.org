@@ -1,0 +1,15 @@
+services:
+  raasel:
+    build: .
+    image: raasel:latest
+    container_name: raasel-website
+    restart: "no"
+    networks:
+      default:
+        aliases:
+          - raasel-nginx
+
+networks:
+  default:
+    external: true
+    name: rproxy_nginx_gh_app-network

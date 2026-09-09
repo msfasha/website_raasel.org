@@ -1,0 +1,8 @@
+# Ignore APK artifacts
+downloads/*.apk
+
+# Ignore downloaded/served binaries in this folder by default
+downloads/*
+
+# Keep folder guidance file in git
+!downloads/README.md
