@@ -2,7 +2,7 @@ FROM nginx:alpine
 
 COPY index.html /usr/share/nginx/html/index.html
 COPY en/ /usr/share/nginx/html/en/
-COPY assets/ /usr/share/nginx/html/icons/
+COPY icons/ /usr/share/nginx/html/icons/
 COPY downloads/ /usr/share/nginx/html/downloads/
 COPY logo.png /usr/share/nginx/html/logo.png
 COPY privacy/ /usr/share/nginx/html/privacy/

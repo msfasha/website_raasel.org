@@ -4,6 +4,8 @@ services:
     image: raasel:latest
     container_name: raasel-website
     restart: unless-stopped
+    volumes:
+      - ./downloads:/usr/share/nginx/html/downloads:ro
     networks:
       default:
         aliases:

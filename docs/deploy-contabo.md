@@ -46,6 +46,14 @@ docker compose up --build -d
 This alone does nothing publicly reachable yet — the reverse proxy doesn't
 know about it until step 2.
 
+`raasel.apk` is gitignored (too large for git) and won't come from the
+clone. `docker-compose.yml` bind-mounts `./downloads` into the container,
+so upload it once, directly on the server, and it persists across
+redeploys with no rebuild:
+```bash
+scp downloads/raasel.apk root@173.212.231.7:/opt/raasel.org/downloads/
+```
+
 ### 2. Add the reverse-proxy server block
 On Contabo, in the reverse proxy's `nginx/conf.d/` (e.g.
 `/opt/supporting-services/rproxy_nginx_gh/nginx/conf.d/raasel-org.conf`):
