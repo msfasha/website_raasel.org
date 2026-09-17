@@ -1,21 +1,18 @@
-# raasel_com_website
+# raasel_org_website
 
-## Deployment Note: Static Assets Path on raasel.com
+## Deployment Note: Static Assets Path
 
-Important: On the public domain `raasel.com`, the reverse proxy reserves `/assets` for MAS/OIDC routes.
-
-Because of that, website images must not be served from `/assets/...` in page HTML. If you reference `/assets/...`, the public proxy may route those requests to MAS and return `404`, even if files exist in the website container.
-
-Use this convention instead:
+Website images are served under `/icons/...`, not `/assets/...`:
 
 - Keep source media files in the local project folder `assets/`.
 - In the website container, publish them under `/icons/...`.
 - In HTML, reference media as `/icons/...` (for example `/icons/raasel-logo.png`, `/icons/screen_shots/1.jpg`).
 
-### Why this exists
-
-- `https://raasel.com/assets/*` is handled by MAS proxy paths.
-- `https://raasel.com/icons/*` is handled by the website backend (`raasel-nginx`).
+This convention dates from when the site shared a host with a separate MAS/OIDC
+service that reserved `/assets`. That service is gone, so `raasel.org`'s proxy
+no longer reserves `/assets` for anything — but the `/icons` convention is
+kept for consistency with existing links/assets rather than churned for no
+reason.
 
 ### Current Docker mapping
 

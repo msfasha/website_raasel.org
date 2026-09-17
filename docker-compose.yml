@@ -3,7 +3,7 @@ services:
     build: .
     image: raasel:latest
     container_name: raasel-website
-    restart: "no"
+    restart: unless-stopped
     networks:
       default:
         aliases:
